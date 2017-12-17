@@ -1,0 +1,215 @@
+/* reset */
+* { 
+  padding: 0; 
+  margin: 0; 
+  list-style: none; 
+  outline: 0; 
+  border: 0; 
+  box-sizing: border-box; 
+  font-size: 14px;
+  font-weight: normal;
+}
+
+/* util */
+.clearfix:after { content: ''; display: block; clear: both; height: 0; }
+
+/* vue */
+[v-cloak] { display: none; }
+
+/* modules */
+
+.input {
+  padding: 8px 3% 6px;
+  border-radius: 5px;
+  border: 1px solid #666;
+  font-size: 16px;
+  background: linear-gradient(to bottom, rgba(204,204,204,1) 0%, rgba(255,255,255,1) 5%);
+}
+
+.select {
+  position: relative;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.select:before {
+  border-left: 1px solid #666;
+  content: '';
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  width: 23px;
+  border-radius: 0 5px 5px 0;
+  background: #e2e2e2;
+  background: linear-gradient(to bottom, #fff 0%,#e2e2e2 100%);
+}
+
+.select:after {
+  position: absolute;
+  top: 0;
+  right: 8px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  margin: auto;
+  border-top: 4px solid #000;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  content: '';
+}
+
+.select > select {
+  position: relative;
+  width: 100%;
+  padding: 7px 3% 6px;
+  -webkit-appearance: none;
+  appearance: none;
+  z-index: 10;
+  background: transparent;
+  border-radius: 5px;
+  border: 1px solid #666;
+  font-size: 16px;
+  vertical-align: middle;
+}
+
+.checkbox-btn {
+  display: table;
+  width: 100%;
+}
+
+.checkbox-btn li {
+  position: relative;
+  width: 50%;
+  display: table-cell;
+  vertical-align: middle;
+  border: 1px solid #bbb;
+}
+
+.checkbox-btn-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.checkbox-btn li:first-child {
+  border-top-left-radius: 5px; 
+  border-bottom-left-radius: 5px; 
+}
+
+.checkbox-btn li:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.checkbox-btn-item {
+  padding: 10px 4%;
+  font-size: 13px;
+  vertical-align: middle;
+}
+
+.checkbox-btn-item [type='radio'],
+.checkbox-btn-item [type='checkbox'] {
+  vertical-align: middle;
+}
+
+.text-12 {
+  font-size: 12px !important;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.heading-bar {
+  background: linear-gradient(to bottom, #fc7c6d 0%, #ff5743 100%);
+  border-top: 1px solid #ff5743;
+  border-bottom: 1px solid #fa2a2a;
+  font-size: 16px;
+  color: #fff;
+  padding: 10px 4%;
+  line-height: 1;
+}
+
+.heading-form {
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #ebebeb;
+}
+
+.heading-form-inner {
+  padding-left: 10px;
+  font-size: 14px;
+  border-left: 4px solid #ff5743;
+  color: #666;
+  line-height: 1.1;
+  font-weight: bold;
+}
+
+.heading-form-caption {
+  color: #666;
+  font-size: 11px;
+}
+
+.form-section {
+  width: 90%;
+  margin: 10px 5%;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 25px 0;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  position: relative;
+  text-shadow: 1px 1px 0 #528002;
+  background: linear-gradient(to bottom, #68d84f 0%,#55c53b 54%,#36ab1b 100%);
+  border: 1px solid #36ab1b;
+  border-radius: 5px;
+}
+
+.line {
+  border-top: 1px solid #8c8b8b;
+}
+
+/* layouts */
+.full { 
+  width: 100%;
+}
+
+.half {
+  width: 50%;
+}
+
+.l-left {
+  float: left;
+}
+
+.l-right {
+  float: right;
+}
+
+.l-bottom-5 {
+  margin-bottom: 5px !important;
+}
+
+.l-bottom-10 {
+  margin-bottom: 10px !important;
+}
+
+.l-bottom-15 {
+  margin-bottom: 15px !important;
+}
+
+.l-bottom-20 {
+  margin-bottom: 20px !important;
+}
+
+.l-bottom-25 {
+  margin-bottom: 25px !important;
+}
+

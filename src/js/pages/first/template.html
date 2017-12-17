@@ -1,0 +1,434 @@
+<div>
+  <step-navigation src='https://hikkoshizamurai.jp/images/request/sp/form/samurai_flow_first.png' />
+  <p class='header-banner'>
+    <img src='https://hikkoshizamurai.jp/images/request/sp/form/banner05.png' alt='簡単1分！の情報入力で一番安い見積もりが分かる！' class='full'>
+  </p>
+  <p class='lead'>
+    入力情報をもとに「引越し業者に対してまとめて見積もりの依頼」と「あなたの引越しの相場」を算出します。以下の項目を入力してください。
+  </p>
+
+  <div class='form-box l-bottom-25'>
+    <div class='form-header'>
+      <div class='form-header-icon'>
+        <img src='https://hikkoshizamurai.jp/images/request/sp/form/cmn_ic_ok01.png' alt='必須' width='55' height='30'>
+      </div>
+      <h2 class='form-header-text'>現在のお住まい</h2>
+    </div>
+    <div class='form-box-body'>
+      <p class='form-error'></p>
+      <dl class='form-zipcode l-bottom-10'>
+        <dt>郵便番号</dt>
+        <dd class='clearfix'>
+          <input maxlength='8' 
+                 type='tel' 
+                 name='request[current_zip_code]' 
+                 value='1540001' 
+                 placeholder='例）1500001'
+                 class='input form-input-zipcode'>
+          <p class='l-right'>
+            <span class='btn-auto-address'>住所自動入力</span>
+          </p>
+        </dd>
+      </dl>
+
+      <p class='form-current-address'>東京都 世田谷区 池尻</p>
+
+      <dl class='form-table l-bottom-15'>
+        <dt>
+          <label for='request_current_street_name'>番地</label>
+        </dt>
+        <dd>
+          <input type='text' 
+                 name='request[current_street_name]' 
+                 value='21' 
+                 placeholder='例）6-1-1' 
+                 class='input full'>
+        </dd>
+      </dl>
+
+      <!-- ▼【現在のお住まい：ビル・マンション名：任意】ここから -->
+      <div class='form-accordion l-bottom-15'>
+        <div class='form-accordion-header'>
+          <span class='form-accordion-label'>任意</span>
+          <span class='form-accordion-icon'>＋</span>
+          <label for='request_current_building_name'>ビル・マンション名</label>
+        </div>
+        <div class='form-accordion-body'>
+          <input class='input full' 
+                 type='text' 
+                 name='request[current_building_name]' 
+                 value='' 
+                 placeholder='例）Aマンション306'>
+        </div>
+      </div>
+      <!-- ▲【現在のお住まい：ビル・マンション名：任意】ここまで -->
+
+      <!-- ▼【現在のお住まい：建物タイプ】ここから -->
+      <dl class='form-table l-bottom-15'>
+        <dt>建物<br>タイプ</dt>
+        <dd>
+          <div class='select'>
+            <select name='request[current_building_type]' id='request_current_building_type'>
+              <option value='0'>選択してください</option>
+              <option value='1'>マンション</option>
+              <option value='2'>アパート</option>
+              <option value='3' selected='selected'>戸建て</option>
+              <option value='4'>タワーマンション（20階以上）</option>
+              <option value='5'>その他</option>
+              <option value='6'>公共の建物</option>
+            </select>
+          </div>
+        </dd>
+      </dl>
+      <!-- ▲【現在のお住まい：建物タイプ】ここまで -->
+
+      <!-- ▼【現在のお住まい：建物の階数】ここから -->
+      <div class='form-accordion'>
+        <p class='form-accordion-header'>
+          <span class='form-accordion-label'>任意</span>
+          <span class='form-accordion-icon'>＋</span>
+          <label for='request_current_building_name'>間取り・建物階数など</label>
+        </p>
+        <div class='form-accordion-body'>
+          <!-- ▼【現在のお住まい：間取り】ここから -->
+          <div class='l-bottom-10'>
+            <h3 class='form-option-title'>間取り</h3>
+            <div class='select'>
+              <select name='request[current_room_layout]' id='request_current_room_layout'>
+                <option value='0' selected='selected'>選択してください</option>
+                <option value='1'>ワンルーム</option>
+                <option value='2'>1K</option>
+              </select>
+            </div>
+          </div>
+          <!-- ▲【現在のお住まい：間取り】ここまで -->
+
+          <!-- ▼【現在のお住まい：建物の階数】ここから -->
+          <div class='l-bottom-10'>
+            <h3 class='form-option-title'>建物の階数</h3>
+            <div class='form-floor-item clearfix l-bottom-5'>
+              <div class='select form-floor-select'>
+                <select name='request[current_top_floor_no]' id='request_current_top_floor_no'>
+                  <option value='0' selected='selected'>選択してください</option>
+                  <option value='1'>1</option>
+                </select>
+              </div>
+              <div>階建ての</div>
+            </div>
+            <div class='form-floor-item clearfix'>
+              <div class='select form-floor-select'>
+                <select name='request[current_living_floor_no]' id='request_current_living_floor_no'>
+                  <option value='0' selected='selected'>選択してください</option>
+                  <option value='1'>1</option>
+                </select>
+              </div>
+              <div>階から引越し</div>
+            </div>
+          </div>
+          <!-- ▲【現在のお住まい：建物の階数】ここまで -->
+
+          <!-- ▼【現在のお住まい：エレベーター】ここから -->
+          <div class=''>
+            <h3 class='form-option-title'>エレベーター</h3>
+            <div class='select'>
+              <select name='request[current_has_elevator_flag]' id='request_current_has_elevator_flag'>
+                <option value='1'>あり</option>
+                <option value='0' selected='selected'>なし</option>
+              </select>
+            </div>
+          </div>
+          <!-- ▲【現在のお住まい：エレベーター】ここまで -->
+        </div>
+      </div>
+      <!-- ▲【現在のお住まい：建物の階数】ここまで -->
+    </div>
+  </div>
+
+  <div class='form-box l-bottom-25'>
+    <div class='form-header'>
+      <div class='form-header-icon'>
+        <img src='https://hikkoshizamurai.jp/images/request/sp/form/cmn_ic_ok01.png' alt='必須' width='55' height='30'>
+      </div>
+      <h2 class='form-header-text'>お引越し先のお住まい</h2>
+    </div>
+    <div class='form-box-body'>
+      <p class='form-error'></p>
+      <dl class='form-zipcode l-bottom-15'>
+        <dt>郵便番号<span class='text-12 text-bold'>（お分かりの方のみご入力ください）</span></dt>
+        <dd class='clearfix'>
+          <input maxlength='8' 
+                  type='tel' 
+                  name='request[current_zip_code]' 
+                  value='1540001' 
+                  placeholder='例）1500001'
+                  class='input form-input-zipcode'>
+          <p class='l-right'>
+            <span class='btn-auto-address'>住所自動入力</span>
+          </p>
+        </dd>
+      </dl>
+
+      <dl class='form-table l-bottom-15'>
+        <dt>引越し先の都道府県</dt>
+        <dd>
+          <div class='select'>
+            <select name='request[current_building_type]' id='request_current_building_type'>
+              <option value='0'>選択してください</option>
+              <option value='1'>マンション</option>
+              <option value='2'>アパート</option>
+              <option value='3' selected='selected'>戸建て</option>
+              <option value='4'>タワーマンション（20階以上）</option>
+              <option value='5'>その他</option>
+              <option value='6'>公共の建物</option>
+            </select>
+          </div>
+        </dd>
+      </dl>
+
+      <dl class='form-table'>
+        <dt>市区町村</dt>
+        <dd>
+          <div class='select'>
+            <select name='request[current_building_type]' id='request_current_building_type'>
+              <option value='0'>選択してください</option>
+            </select>
+          </div>
+        </dd>
+      </dl>
+    </div>
+  </div>
+
+
+  <div class='form-box l-bottom-25'>
+    <div class='form-header'>
+      <div class='form-header-icon'>
+        <img src='https://hikkoshizamurai.jp/images/request/sp/form/cmn_ic_ok01.png' alt='必須' width='55' height='30'>
+      </div>
+      <h2 class='form-header-text'>現在のお住まい</h2>
+    </div>
+    <div class='form-box-body'>
+      <p class='form-error'></p>
+
+      <dl class='form-table l-bottom-15'>
+        <dt>町域</dt>
+        <dd>
+          <div class='select'>
+            <select name='request[current_building_type]' id='request_current_building_type'>
+              <option value='0'>選択してください</option>
+            </select>
+          </div>
+        </dd>
+      </dl>
+
+      <dl class='form-table l-bottom-15'>
+        <dt>
+          <label for='request_current_street_name'>番地</label>
+        </dt>
+        <dd>
+          <input type='text' 
+                  name='request[current_street_name]' 
+                  value='21' 
+                  placeholder='例）6-1-1' 
+                  class='input full'>
+        </dd>
+      </dl>
+
+      <dl class='form-table l-bottom-15'>
+        <dt>建物<br>タイプ</dt>
+        <dd>
+          <div class='select'>
+            <select name='request[current_building_type]' id='request_current_building_type'>
+              <option value='0'>選択してください</option>
+              <option value='1'>マンション</option>
+              <option value='2'>アパート</option>
+              <option value='3' selected='selected'>戸建て</option>
+              <option value='4'>タワーマンション（20階以上）</option>
+              <option value='5'>その他</option>
+              <option value='6'>公共の建物</option>
+            </select>
+          </div>
+        </dd>
+      </dl>
+
+      <ul class='checkbox-btn l-bottom-10'>
+        <li>
+          <label for='request_new_new_built_flag_1'>
+            <div class='checkbox-btn-item'>
+              <input name='request[new_new_built_flag]' type='hidden' value=''>
+              <input name='request[new_new_built_flag]' type='checkbox' value='1' id='request_new_new_built_flag_1'>
+              &nbsp;新築の場合はチェックしてください
+            </div>
+          </label>
+        </li>
+      </ul>
+
+
+      <!-- ▼【現在のお住まい：建物の階数】ここから -->
+      <div class='form-accordion'>
+        <p class='form-accordion-header'>
+          <span class='form-accordion-label'>任意</span>
+          <span class='form-accordion-icon'>＋</span>
+          <label for='request_current_building_name'>間取り・建物階数など</label>
+        </p>
+        <div class='form-accordion-body'>
+          <!-- ▼【現在のお住まい：間取り】ここから -->
+          <div class='l-bottom-10'>
+            <h3 class='form-option-title'>間取り</h3>
+            <div class='select'>
+              <select name='request[current_room_layout]' id='request_current_room_layout'>
+                <option value='0' selected='selected'>選択してください</option>
+                <option value='1'>ワンルーム</option>
+                <option value='2'>1K</option>
+              </select>
+            </div>
+          </div>
+          <!-- ▲【現在のお住まい：間取り】ここまで -->
+
+          <!-- ▼【現在のお住まい：建物の階数】ここから -->
+          <div class='l-bottom-10'>
+            <h3 class='form-option-title'>建物の階数</h3>
+            <div class='form-floor-item clearfix l-bottom-5'>
+              <div class='select form-floor-select'>
+                <select name='request[current_top_floor_no]' id='request_current_top_floor_no'>
+                  <option value='0' selected='selected'>選択してください</option>
+                  <option value='1'>1</option>
+                </select>
+              </div>
+              <div>階建ての</div>
+            </div>
+            <div class='form-floor-item clearfix'>
+              <div class='select form-floor-select'>
+                <select name='request[current_living_floor_no]' id='request_current_living_floor_no'>
+                  <option value='0' selected='selected'>選択してください</option>
+                  <option value='1'>1</option>
+                </select>
+              </div>
+              <div>階から引越し</div>
+            </div>
+          </div>
+          <!-- ▲【現在のお住まい：建物の階数】ここまで -->
+
+          <!-- ▼【現在のお住まい：エレベーター】ここから -->
+          <div class=''>
+            <h3 class='form-option-title'>エレベーター</h3>
+            <div class='select'>
+              <select name='request[current_has_elevator_flag]' id='request_current_has_elevator_flag'>
+                <option value='1'>あり</option>
+                <option value='0' selected='selected'>なし</option>
+              </select>
+            </div>
+          </div>
+          <!-- ▲【現在のお住まい：エレベーター】ここまで -->
+        </div>
+      </div>
+      <!-- ▲【現在のお住まい：建物の階数】ここまで -->
+    </div>
+  </div>
+
+  <h2 class='heading-bar l-bottom-20'>お引越し予定日</h2>
+
+  <div class='form-section'>
+      
+    <ul class='checkbox-btn l-bottom-10'>
+      <li>
+        <input class='checkbox-btn-input' name='request[move_scheduled_flag]' type='radio' value='0' id='request_move_scheduled_flag_0' checked='checked'>
+        <label class='checkbox-btn-item' for='request_move_scheduled_flag_0'>
+          決まっている
+        </label>
+      </li>
+      <li>
+        <input class='checkbox-btn-input' name='request[move_scheduled_flag]' type='radio' value='1' id='request_move_scheduled_flag_1'>
+        <label class='checkbox-btn-item' for='request_move_scheduled_flag_1'>
+          決まっていない
+        </label>
+      </li>
+    </ul>
+
+    <div class='l-select-date'>
+      <div>
+        <div class='select full'>
+          <select>
+            <option>2017年 12月</option>
+          </select>
+        </div>
+      </div>
+      <div>
+        <div class='select full'>
+          <select>
+            <option>29日</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h3 class='heading-form'>
+    <div class='heading-form-inner'>お引越し先（新居）の都道府県</div>
+  </h3>
+
+  <div class='form-section'>
+    <ul class='datebox clearfix'>
+      <li>
+        <input class='datebox-input' name='request[move_scheduled_time]' type='radio' value='1' id='request_move_scheduled_time_1' checked='checked'>
+        <label class='datebox-item' for='request_move_scheduled_time_1'>
+          <div class='datebox-text'>いつでもよい</div>
+        </label>
+      </li>
+      <li>
+        <input class='datebox-input' name='request[move_scheduled_time]' type='radio' value='2' id='request_move_scheduled_time_2'>
+        <label class='datebox-item' for='request_move_scheduled_time_2'>
+          <img class='datebox-image' src='https://hikkoshizamurai.jp/images/request/sp/form/base_ic_time01.png' alt=''>
+          <div>午前</div>
+        </label>
+      </li>
+      <li>
+        <input class='datebox-input' name='request[move_scheduled_time]' type='radio' value='3' id='request_move_scheduled_time_3'>
+        <label class='datebox-item' for='request_move_scheduled_time_3'>
+          <img class='datebox-image' src='https://hikkoshizamurai.jp/images/request/sp/form/base_ic_time02.png' alt=''>
+          <div>午後～15時</div>
+        </label>
+      </li>
+      <li>
+        <input class='datebox-input' name='request[move_scheduled_time]' type='radio' value='4' id='request_move_scheduled_time_4'>
+        <label class='datebox-item' for='request_move_scheduled_time_4'>
+          <img class='datebox-image' src='https://hikkoshizamurai.jp/images/request/sp/form/base_ic_time03.png' alt=''>
+          <div>15時以降</div>
+        </label>
+      </li>
+    </ul>
+  </div>
+
+  <h3 class='heading-form'>
+    <div class='heading-form-inner'>お引越し人数</div>
+  </h3>
+
+  <div class='form-section'>
+    <div class='select full'>
+      <select>
+        <option>1人</option>
+      </select>
+    </div>
+  </div>
+
+  <h2 class='heading-bar l-bottom-20'>引越し後すぐにインターネットを始めたい方に(任意)</h2>
+
+  <div class='form-section l-bottom-20'>
+    <ul class='checkbox-list'>
+      <li>
+        <input class='checkbox-list-input' name='request[provider_total]' type='checkbox' value='1' id='request_provider_total_1'>
+        <label for='request_provider_total_1' class='checkbox-list-text'>引越しに合わせてインターネットの手続きをしたい「新規お申込」希望</label>
+      </li>
+      <li>
+        <input class='checkbox-list-input' name='request[provider_total]' type='checkbox' value='2' id='request_provider_total_2'>
+        <label for='request_provider_total_2' class='checkbox-list-text'>電話で相談希望</label>
+      </li>
+    </ul>
+  </div>
+
+  <hr class='line l-bottom-25'>
+
+  <div class='form-section'>
+    <router-link :to="{ name: 'second', params: { userId: 123 }}" class="btn">次のページへ進む</router-link>
+  </div>
+</div>

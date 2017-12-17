@@ -1,0 +1,73 @@
+<div>
+  <step-navigation src='https://hikkoshizamurai.jp/images/request/sp/form/samurai_flow_first.png' />
+  <p class='header-banner'>
+    <img src='https://hikkoshizamurai.jp/images/request/sp/form/banner05.png' alt='簡単1分！の情報入力で一番安い見積もりが分かる！' class='full'>
+  </p>
+  <p class='lead'>
+    入力情報をもとに「引越し業者に対してまとめて見積もりの依頼」と「あなたの引越しの相場」を算出します。以下の項目を入力してください。
+  </p>
+  <h3 class='heading-form'>
+    <div class='heading-form-inner'>
+      現在お住まいの郵便番号<br>
+      <span class='heading-form-caption'>－（ハイフン）は不要です</span>
+    </div>
+  </h3>
+  <div class='form-section'>
+    <input maxlength='8' 
+           type='tel' 
+           name='request[current_zip_code]' 
+           placeholder='例）1500001' 
+           id='search_zip_code'
+           class='input full'>
+  </div>
+  <h3 class='heading-form'>
+    <div class='heading-form-inner'>
+      お引越し先（新居）の都道府県
+    </div>
+  </h3>
+  <div class='form-section'>
+    <div class='select'>
+      <select>
+        <option>▽選択してください</option>
+      </select>
+    </div>
+  </div>
+  <h3 class='heading-form'>
+    <div class='heading-form-inner'>
+      引越しタイプ
+    </div>
+  </h3>
+  <div class='form-section l-bottom-20'>
+    <ul class='list-moveType clearfix'>
+      <li>
+        <label for='request_move_type_1'>
+          <div class='radio-moveType clearfix' v-bind:class="{ 'is-active': move.type === '1' }">
+            <div class='radio-moveType-input'>
+              <input name='request[move_type]' type='radio' value='1' id='request_move_type_1' checked='checked' v-model="move.type">
+            </div>
+            <div class='radio-moveType-artwork'>
+              <img class='radio-moveType-image' src='https://hikkoshizamurai.jp/images/request/sp/form/start_ic_single01.png' alt=''><br>
+              単身
+            </div>
+          </div>
+        </label>  
+      </li>
+      <li>
+        <label for='request_move_type_2'>
+          <div class='radio-moveType clearfix' v-bind:class="{ 'is-active': move.type === '2' }">
+            <div class='radio-moveType-input'>
+              <input name='request[move_type]' type='radio' value='2' id='request_move_type_2' v-model="move.type">
+            </div>
+            <div class='radio-moveType-artwork'>
+              <img class='radio-moveType-image' src='https://hikkoshizamurai.jp/images/request/sp/form/start_ic_family01.png' alt=''><br>
+              家族
+            </div>
+          </div>
+        </label>
+      </li>
+    </ul>
+  </div>
+  <div class='form-section'>
+    <router-link :to="{ name: 'first', params: { userId: 123 }}" class="btn">次のページへ進む</router-link>
+  </div>
+</div>
