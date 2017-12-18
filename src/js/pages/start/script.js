@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import stepNavigation from '../../components/step-navigation';
+import constants from '../../constants';
 
 Vue.component('step-navigation', stepNavigation);
 
@@ -9,6 +10,7 @@ export default {
       move: {
         type: '1',
       },
+      prefectures: constants.prefectures,
     };
   },
   methods: {

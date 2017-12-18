@@ -8,17 +8,13 @@
   </p>
   <h3 class='heading-form'>
     <div class='heading-form-inner'>
-      現在お住まいの郵便番号<br>
+      現在お住まいの郵便番号
+      <br>
       <span class='heading-form-caption'>－（ハイフン）は不要です</span>
     </div>
   </h3>
   <div class='form-section'>
-    <input maxlength='8' 
-           type='tel' 
-           name='request[current_zip_code]' 
-           placeholder='例）1500001' 
-           id='search_zip_code'
-           class='input full'>
+    <input maxlength='8' type='tel' name='request[current_zip_code]' placeholder='例）1500001' id='search_zip_code' class='input full'>
   </div>
   <h3 class='heading-form'>
     <div class='heading-form-inner'>
@@ -28,7 +24,9 @@
   <div class='form-section'>
     <div class='select'>
       <select>
-        <option>▽選択してください</option>
+        <option v-for="prefecture in prefectures" v-bind:value="prefecture.value">
+          {{ prefecture.text }}
+        </option>
       </select>
     </div>
   </div>
@@ -46,11 +44,11 @@
               <input name='request[move_type]' type='radio' value='1' id='request_move_type_1' checked='checked' v-model="move.type">
             </div>
             <div class='radio-moveType-artwork'>
-              <img class='radio-moveType-image' src='https://hikkoshizamurai.jp/images/request/sp/form/start_ic_single01.png' alt=''><br>
-              単身
+              <img class='radio-moveType-image' src='https://hikkoshizamurai.jp/images/request/sp/form/start_ic_single01.png' alt=''>
+              <br> 単身
             </div>
           </div>
-        </label>  
+        </label>
       </li>
       <li>
         <label for='request_move_type_2'>
@@ -59,8 +57,8 @@
               <input name='request[move_type]' type='radio' value='2' id='request_move_type_2' v-model="move.type">
             </div>
             <div class='radio-moveType-artwork'>
-              <img class='radio-moveType-image' src='https://hikkoshizamurai.jp/images/request/sp/form/start_ic_family01.png' alt=''><br>
-              家族
+              <img class='radio-moveType-image' src='https://hikkoshizamurai.jp/images/request/sp/form/start_ic_family01.png' alt=''>
+              <br> 家族
             </div>
           </div>
         </label>
@@ -68,6 +66,6 @@
     </ul>
   </div>
   <div class='form-section'>
-    <router-link :to="{ name: 'first', params: { userId: 123 }}" class="btn">次のページへ進む</router-link>
+    <router-link :to="{ name: 'first', params: { userId: 123 }}" class='btn'>次のページへ進む</router-link>
   </div>
 </div>

@@ -12,14 +12,14 @@ module.exports = {
   module: {
     loaders: [
       {
-       test: /\.vue$/,
-       loader: 'vue-loader'
+        test: /\.vue$/,
+        loader: 'vue-loader'
       },
       {
         test: /\.js$/,
         loader: 'babel-loader',
         exclude: /node_modules/,
-        query:{
+        query: {
           plugins: ['transform-runtime'],
           presets: ['env']
         }
@@ -27,7 +27,7 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: ['.js', '.vue', 'vuex'],
+    extensions: ['.js', '.vue', '.vuex'],
     alias: {
       'vue$': 'vue/dist/vue.esm.js'
     }
