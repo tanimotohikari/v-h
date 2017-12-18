@@ -9,6 +9,6 @@ export default {
     window.addEventListener('scroll', this.scrollHandler, false);
   },
   methods: {
-    scrollHandler(e) {},
+    scrollHandler() { },
   },
 };

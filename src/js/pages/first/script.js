@@ -4,11 +4,11 @@ import stepNavigation from '../../components/step-navigation';
 Vue.component('step-navigation', stepNavigation);
 
 export default {
-  data: function () {
-    return {}
+  data: function data() {
+    return {};
   },
-  created: function () {
+  created: function created() {
     window.scrollTo(0, 0);
   },
-  methods: {}
+  methods: {},
 };
