@@ -1,0 +1,40 @@
+// 愛西市
+[
+  {
+    "text": "ア",
+    "children": [
+      {"id": "赤目町", "text": "赤目町", "zip_code": "4968046", "prefecture_id": "23", "kana": "アカメチョウ"}
+    ]
+  },
+  {
+    "text": "イ",
+    "children": [
+      {"id": "石田町", "text": "石田町", "zip_code": "4960938", "prefecture_id": "23", "kana": "イシダチョウ"},   
+      {"id": "稲葉町", "text": "稲葉町", "zip_code": "4960907", "prefecture_id": "23", "kana": "イナバチョウ"},
+      {"id": "鰯江町", "text": "鰯江町", "zip_code": "4960923", "prefecture_id": "23", "kana": "イワシエチョウ"}
+    ]
+  },
+  {
+    "text": "ウ",
+    "children": [
+      {"id": "鵜多須町", "text": "鵜多須町", "zip_code": "4968033", "prefecture_id": "23", "kana": "ウタスチョウ"},    
+      {"id": "内佐屋町", "text": "内佐屋町", "zip_code": "4960903", "prefecture_id": "23", "kana": "ウチザヤチョウ"}
+    ]
+  },
+  {
+    "text": "エ",
+    "children": [
+      {"id": "江西町", "text": "江西町", "zip_code": "4968044", "prefecture_id": "23", "kana": "エニシチョウ"}
+    ]
+  },
+  {
+    "text": "オ",
+    "children": [
+      {"id": "大井町", "text": "大井町", "zip_code": "4960921", "prefecture_id": "23", "kana": "オオイチョウ"},
+      {"id": "大野町", "text": "大野町", "zip_code": "4960922", "prefecture_id": "23", "kana": "オオノチョウ"},
+      {"id": "大野山町", "text": "大野山町", "zip_code": "4968017", "prefecture_id": "23", "kana": "オオノヤマチョウ"},
+      {"id": "落合町", "text": "落合町", "zip_code": "4960909", "prefecture_id": "23", "kana": "オチアイチョウ"},
+      {"id": "小津町", "text": "小津町", "zip_code": "4968009", "prefecture_id": "23", "kana": "オヅチョウ"}
+    ]
+  }
+]

@@ -1,0 +1,31 @@
+[
+  {
+    "text": "ア",
+    "children": [
+      {"id": "愛西市", "text": "愛西市", "zip_code": "4960000", "prefecture_id": "23", "kana": "アイサイシ"},
+      {"id": "愛知郡東郷町", "text": "愛知郡東郷町", "zip_code": "4700100", "prefecture_id": "23", "kana": "アイチグントウゴウチョウ"},
+      {"id": "海部郡大治町", "text": "海部郡大治町", "zip_code": "4901100", "prefecture_id": "23", "kana": "アマグンオオハルチョウ"},
+      {"id": "海部郡蟹江町", "text": "海部郡蟹江町", "zip_code": "4970000", "prefecture_id": "23", "kana": "アマグンカニエチョウ"},
+      {"id": "海部郡飛島村", "text": "海部郡飛島村", "zip_code": "4901400", "prefecture_id": "23", "kana": "アマグントビシマムラ"},
+      {"id": "あま市", "text": "あま市", "zip_code": "4901200", "prefecture_id": "23", "kana": "アマシ"},
+      {"id": "安城市", "text": "安城市", "zip_code": "4460000", "prefecture_id": "23", "kana": "アンジョウシ"}
+    ]
+  },
+  {
+    "text": "イ",
+    "children": [
+      {"id": "一宮市", "text": "一宮市", "zip_code": "4910000", "prefecture_id": "23", "kana": "イチノミヤシ"},
+      {"id": "稲沢市", "text": "稲沢市", "zip_code": "4920000", "prefecture_id": "23", "kana": "イナザワシ"},
+      {"id": "犬山市", "text": "犬山市", "zip_code": "4840000", "prefecture_id": "23", "kana": "イヌヤマシ"},
+      {"id": "岩倉市", "text": "岩倉市", "zip_code": "4820000", "prefecture_id": "23", "kana": "イワクラシ"}
+    ]
+  },
+  {
+    "text": "オ",
+    "children": [
+      {"id": "大府市", "text": "大府市", "zip_code": "4740000", "prefecture_id": "23", "kana": "オオブシ"},
+      {"id": "岡崎市", "text": "岡崎市", "zip_code": "4440000", "prefecture_id": "23", "kana": "オカザキシ"},
+      {"id": "尾張旭市", "text": "尾張旭市", "zip_code": "4880000", "prefecture_id": "23", "kana": "オワリアサヒシ"}
+    ]
+  }
+]
