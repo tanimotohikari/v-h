@@ -1,5 +1,5 @@
 .counter {
-  display: inline-block;
+  display: block;
 
   & > * {
     display: inline-block;
@@ -31,6 +31,10 @@
     color: #dadada;
     border-radius: 7px;
     border: 1px solid #ccc;
+
+    &.is-active {
+      background-color: #e4e79f;
+    }
   }
 
   .counter-increment {

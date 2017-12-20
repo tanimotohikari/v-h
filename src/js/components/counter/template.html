@@ -1,5 +1,9 @@
 <div class='counter'>
-  <a class='counter-btn'>-</a><div class='counter-value'>
-    <input class='counter-value-input' type='number' value='0'>
-  </div><a class='counter-btn'>+</a>
+  <a v-on:click='decrementCounter' class='counter-btn' v-bind:class='{ "is-active": 0 < count }'>
+    -
+  </a><div class='counter-value'>
+    <input class='counter-value-input' v-bind:max='max' min='0' type='number' v-model='count'>
+  </div><a v-on:click='incrementCounter' class='counter-btn' v-bind:class='{ "is-active": count < max }'>
+    +
+  </a>
 </div>

@@ -13,32 +13,16 @@
       <div class='heading-form-inner'>リビング周り</div>
     </h3>
     <ul class='form-section clearfix'>
-      <li class='box'>
+      <li class='box' 
+          v-for='(item, index) in furniture'
+          v-bind:key='item.name'>
         <div class='box-header'></div>
         <div class='box-body'>
           <img class='box-img-furniture' src='https://hikkoshizamurai.jp/images/request/new/furniture23.png'>
-          <counter />
-        </div>
-      </li>
-      <li class='box'>
-        <div class='box-header'></div>
-        <div class='box-body'>
-          <img class='box-img-furniture' src='https://hikkoshizamurai.jp/images/request/new/furniture23.png'>
-          <counter />
-        </div>
-      </li>
-      <li class='box'>
-        <div class='box-header'></div>
-        <div class='box-body'>
-          <img class='box-img-furniture' src='https://hikkoshizamurai.jp/images/request/new/furniture23.png'>
-          <counter />
-        </div>
-      </li>
-      <li class='box'>
-        <div class='box-header'></div>
-        <div class='box-body'>
-          <img class='box-img-furniture' src='https://hikkoshizamurai.jp/images/request/new/furniture23.png'>
-          <counter />
+          <counter :count='item.count' 
+                    max='9'
+                    v-on:increment='incrementValue(item.name)' 
+                    v-on:decrement='decrementValue(item.name)' />
         </div>
       </li>
     </ul>

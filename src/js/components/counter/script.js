@@ -1,14 +1,28 @@
 export default {
-  props: ['src'],
-  data() {
-    return {
-      isFixed: false,
-    };
+  props: {
+    count: {
+      type: Number,
+      required: true,
+    },
+    max: {
+      type: String,
+      required: false,
+      validator: function (value) {
+        return value || 9
+      }
+    }
   },
-  created() {
-    window.addEventListener('scroll', this.scrollHandler, false);
+  data: function () {
+    return {};
   },
+  created() {},
   methods: {
-    scrollHandler() { },
+    incrementCounter() {
+
+      this.$emit('increment')
+    },
+    decrementCounter() {
+      this.$emit('decrement')
+    }
   },
 };
