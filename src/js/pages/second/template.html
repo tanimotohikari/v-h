@@ -19,7 +19,7 @@
         <div class='box-header'></div>
         <div class='box-body'>
           <img class='box-img-furniture' src='https://hikkoshizamurai.jp/images/request/new/furniture23.png'>
-          <counter :count='item.count' 
+          <counter  :count='item.count' 
                     max='9'
                     v-on:increment='incrementValue(item.name)' 
                     v-on:decrement='decrementValue(item.name)' />

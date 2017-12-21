@@ -2,7 +2,12 @@
   <a v-on:click='decrementCounter' class='counter-btn' v-bind:class='{ "is-active": 0 < count }'>
     -
   </a><div class='counter-value'>
-    <input class='counter-value-input' v-bind:max='max' min='0' type='number' v-model='count'>
+    <input class='counter-value-input' 
+           v-bind:max='max' 
+           min='0' 
+           type='number' 
+           v-model='count'
+           v-on:input='updateInput'>
   </div><a v-on:click='incrementCounter' class='counter-btn' v-bind:class='{ "is-active": count < max }'>
     +
   </a>

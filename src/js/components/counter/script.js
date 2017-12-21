@@ -23,6 +23,9 @@ export default {
     },
     decrementCounter() {
       this.$emit('decrement')
+    },
+    updateInput() {
+      console.log('count',this.count)
     }
   },
 };
