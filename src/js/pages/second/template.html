@@ -15,14 +15,31 @@
     <ul class='form-section clearfix'>
       <li class='box' 
           v-for='(item, index) in furniture'
-          v-bind:key='item.name'>
+          :key='item.name'>
         <div class='box-header'></div>
         <div class='box-body'>
           <img class='box-img-furniture' src='https://hikkoshizamurai.jp/images/request/new/furniture23.png'>
-          <counter  :count='item.count' 
-                    max='9'
-                    v-on:increment='incrementValue(item.name)' 
-                    v-on:decrement='decrementValue(item.name)' />
+          <counter v-bind='item'                  
+                   @increment='incrementValue' 
+                   @decrement='decrementValue' 
+                   @changeInput='changeValue' />
+        </div>
+      </li>
+    </ul>
+    <h3 class='heading-form'>
+      <div class='heading-form-inner'>エアコン</div>
+    </h3>
+    <ul class='form-section clearfix'>
+      <li class='box full' 
+          v-for='(item, index) in furniture'
+          :key='item.name'>
+        <div class='box-header'></div>
+        <div class='box-body'>
+          <img class='box-img-furniture' src='https://hikkoshizamurai.jp/images/request/new/furniture23.png'>
+          <counter v-bind='item'                  
+                   @increment='incrementValue' 
+                   @decrement='decrementValue' 
+                   @changeInput='changeValue' />
         </div>
       </li>
     </ul>

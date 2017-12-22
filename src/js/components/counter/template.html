@@ -1,14 +1,14 @@
 <div class='counter'>
-  <a v-on:click='decrementCounter' class='counter-btn' v-bind:class='{ "is-active": 0 < count }'>
+  <a @click='decrementCounter(name)' class='counter-btn' v-bind:class='{ "is-active": 0 < count }'>
     -
   </a><div class='counter-value'>
     <input class='counter-value-input' 
-           v-bind:max='max' 
-           min='0' 
            type='number' 
-           v-model='count'
-           v-on:input='updateInput'>
-  </div><a v-on:click='incrementCounter' class='counter-btn' v-bind:class='{ "is-active": count < max }'>
+           min='0' 
+           :max='max' 
+           :value='count'
+           @blur='updateInput(name, $event)'>
+  </div><a @click='incrementCounter(name)' class='counter-btn' v-bind:class='{ "is-active": count < max }'>
     +
   </a>
 </div>

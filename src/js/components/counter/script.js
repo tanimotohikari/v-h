@@ -1,11 +1,15 @@
 export default {
   props: {
+    name: {
+      type: String,
+      required: true,
+    },
     count: {
       type: Number,
       required: true,
     },
     max: {
-      type: String,
+      type: Number,
       required: false,
       validator: function (value) {
         return value || 9
@@ -15,17 +19,18 @@ export default {
   data: function () {
     return {};
   },
-  created() {},
+  created: function created () {},
+  computed: {},
   methods: {
-    incrementCounter() {
-
-      this.$emit('increment')
+    incrementCounter(name) {
+      this.$emit('increment', name)
     },
-    decrementCounter() {
-      this.$emit('decrement')
+    decrementCounter(name) {
+      this.$emit('decrement', name)
     },
-    updateInput() {
-      console.log('count',this.count)
+    updateInput(name, event) {
+      const count = event.target.value;
+      this.$emit('changeInput', { count, name })
     }
   },
 };
