@@ -84,3 +84,135 @@
   width: 92px;
 }
 
+.l-form-personal {
+  display: table;
+
+  dt {
+    display: table-cell;
+    width: 5em;
+    vertical-align: middle;
+  }
+
+  dd {
+    display: table-cell;
+    width: 80%;
+
+    & > * {
+      display: inline-block;
+      width: 50%;
+  
+      &:nth-child(odd) {
+        padding-right: 5px;
+      }
+
+      &:nth-child(even) {
+        padding-left: 5px;
+      }
+
+      &.l-form-personal-single {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+      }
+    }
+  }
+}
+
+.text-caution-small {
+  font-size: 11px;
+  color: #f00;
+  line-height: 1.2;
+}
+
+.heading-form-box {
+  padding-bottom: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #666;
+}
+
+.heading-icon-required {
+  display: inline-block;
+  margin-right: 4px;
+  padding: 2px 3px;
+  background: linear-gradient(to bottom, #ffa932 0%, #ff7f22 100%);
+  border-radius: 4px;
+  color: #fff;
+  border: 1px solid #ff7f22;
+  font-size: 11px;
+}
+
+.table-opportunity {
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  width: 100%;
+  font-size: 14px;
+
+  tr {
+    &:nth-child(odd) {
+      background-color: #ffc;
+    }
+    &:nth-child(even) {
+      background-color: #fff;
+    }
+  }
+
+  th {
+
+  }
+
+  td {
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 6px;
+    font-size: 13px;
+    vertical-align: middle;
+    line-height: 1.2;
+  }
+}
+
+.list-benefit {
+
+  width: 100%;
+
+  li {
+    position: relative;
+  }
+
+  .list-benefit-checkbox {
+    position: absolute;
+    top: 50%;
+    left: 6px;
+    transform: translateY(-50%);
+
+    &:checked + label {
+      background-image: linear-gradient(to bottom, #cbca9a 0%, #fffed5 10%, #fffed5 99%, #cbca9a 100%);
+    }
+  }
+
+  .list-benefit-item {
+    display: table;
+    padding: 10px 10px 10px 25px;
+  }
+
+  .list-benefit-thumbnail {
+    display: table-cell;
+    width: 20%;
+    vertical-align: middle;
+  }
+
+  .list-benefit-info {
+    display: table-cell;
+    padding-left: 10px;
+    line-height: 0.9;
+  }
+
+  .list-benefit-text {
+    font-size: 10px;
+  }
+}
+
+.flets-section {
+  padding: 10px 5%;
+  border-bottom: 1px solid #d4ebff;
+  background: #edf7ff;
+}

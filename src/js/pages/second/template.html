@@ -151,6 +151,7 @@
       </div>
     </div>
   </section>
+
   <h2 class='heading-bar'>作業の依頼内容</h2>
   <ul class='form-section l-box-half labelbox clearfix' id='option_box01'>
     <li>
@@ -221,7 +222,7 @@
   <img class='full' src='https://hikkoshizamurai.jp/images/request/sp/form/personal_banner01.png' 
        alt='お荷物情報のご入力ありがとうございました。完了ページにて相場料金を算出いたします。'>
   
-  <div class='form-section'>
+  <div class='form-section l-bottom-25'>
     <div class='privacymark'>
       <p class='privacymark-img'>
         <img alt='プライバシーマーク' src='https://hikkoshizamurai.jp/images/request/sp/cmn_privacymark_85.gif' class='full'>
@@ -229,4 +230,159 @@
       <p class='privacymark-text'>※ご入力いただいた情報は、個人情報保護のため、セキュリティの高いSSL形式で暗号化されています。</p>
     </div>
   </div>
+
+  <div class='form-box l-bottom-25'>
+    <div class='form-header'>
+      <div class='form-header-icon'>
+        <img src='https://hikkoshizamurai.jp/images/request/sp/form/cmn_ic_ok01.png' alt='必須' width='55' height='30'>
+      </div>
+      <h2 class='form-header-text'>お客様情報</h2>
+    </div>
+    <div class='form-box-body'>
+      <p class='form-error'></p>
+      <!-- ▼【お客様情報：お名前】ここから -->
+      <dl class='l-form-personal l-bottom-15'>
+        <dt>お名前</dt>
+        <dd>
+          <div>
+            <div class='input'>
+              <input maxlength='25' type='text' placeholder='生活' class='full'>
+            </div>
+          </div><div>
+            <div class='input'>
+              <input maxlength='25' type='text' placeholder='太郎' class='full'>
+            </div>
+          </div>
+        </dd>
+      </dl>
+      <!-- ▲【お客様情報：お名前】ここまで -->
+      
+      <!-- ▼【お客様情報：フリガナ】ここから -->
+      <dl class='l-form-personal l-bottom-15'>
+        <dt>フリガナ</dt>
+        <dd>
+          <div>
+            <div class='input'>
+              <input maxlength='25' type='text' placeholder='セイカツ' class='full'>
+            </div>
+          </div><div>
+            <div class='input'>
+              <input maxlength='25' type='text'  placeholder='タロウ' class='full'>
+            </div>
+          </div>
+        </dd>
+      </dl>
+      <!-- ▲【お客様情報：フリガナ】ここまで -->
+      
+      <!-- ▼【お客様情報：電話番号】ここから -->
+      <dl class='l-form-personal'>
+        <dt>電話番号</dt>
+        <dd>
+          <div class='full l-form-personal-single'>
+            <div class='input full'>
+              <input maxlength='13' type='tel' placeholder='09001230123'>
+            </div>
+          </div>
+        </dd>
+      </dl>
+
+      <dl class='l-form-personal l-bottom-15'>
+        <dt></dt>
+        <dd>
+          <div class='full l-form-personal-single'>
+            <span class='text-caution-small'>※電話番号の入力間違いにご注意ください。</span>
+          </div>
+        </dd>
+      </dl>
+      <!-- ▲【お客様情報：電話番号】ここまで -->
+      
+      <!-- ▼【お客様情報：メールアドレス】ここから -->
+      <dl class='l-form-personal l-bottom-15'>
+        <dt>メール<br>アドレス</dt>
+        <dd>
+          <div class='full l-form-personal-single'>
+            <div class='input full'>
+              <input type='email' placeholder='info@example.com'>
+            </div>
+          </div>
+        </dd>
+      </dl>
+    
+      <h3 class='heading-form-box'>
+        <span class='heading-icon-required'>必須</span>当サイトを知ったきっかけ
+      </h3>
+
+      <table class='table-opportunity'>
+        <tbody>
+          <tr>
+            <td width='50%'>
+              <input name='request[advertise_type][]' type='checkbox' value='2' id='request_advertise_type_2'>
+              <label for='request_advertise_type_2'>テレビCM</label>
+            </td>
+            <td width='50%'>
+              <input name='request[advertise_type][]' type='checkbox' value='65536' id='request_advertise_type_65536'>
+              <label for='request_advertise_type_65536'>ラジオCM<br>&nbsp;&nbsp;(J-WAVE)</label>
+            </td>
+          </tr>
+          <tr>
+            <td width='50%'>
+              <input name='request[advertise_type][]' type='checkbox' value='8192' id='request_advertise_type_8192'>
+              <label for='request_advertise_type_8192'>ラジオCM<br>&nbsp;&nbsp;(NACK5)</label>
+            </td>
+            <td width='50%'>
+              <input name='request[advertise_type][]' type='checkbox' value='32' id='request_advertise_type_32'>
+              <label for='request_advertise_type_32'>検索</label>
+            </td>
+          </tr>
+          <tr>
+            <td width='50%'>
+              <input name='request[advertise_type][]' type='checkbox' value='8' id='request_advertise_type_8'>
+              <label for='request_advertise_type_8'>クチコミ</label>
+            </td>
+            <td width='50%'>
+              <input name='request[advertise_type][]' type='checkbox' value='4' id='request_advertise_type_4'>
+              <label for='request_advertise_type_4'>Twitter/<br>&nbsp;&nbsp;Facebook</label>
+            </td>
+          </tr>
+          <tr>
+            <td width='50%'>
+              <input name='request[advertise_type][]' type='checkbox' value='256' id='request_advertise_type_256'>
+              <label for='request_advertise_type_256'>インターネットの広告</label>
+            </td>
+            <td width='50%'>
+              <input name='request[advertise_type][]' type='checkbox' value='64' id='request_advertise_type_64'>
+              <label for='request_advertise_type_64'>その他</label>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <input type='hidden' value='0' name='request[advertise_type][]'>
+      <p></p>
+        
+    </div>
+  </div>
+
+  <h2 class='heading-bar'>サイト利用者特典</h2>
+
+  <ul class='list-benefit'>
+    <li>
+      <input class='list-benefit-checkbox' type='checkbox' id='benefit'>
+      <label class='list-benefit-item' for='benefit'>
+        <div class='list-benefit-thumbnail'>
+          <img class='full' src="https://hikkoshizamurai.jp/images/request/sp/form/alliance_p_electric.jpg" alt="">
+        </div>
+        <div class='list-benefit-info'>
+          <img class='full' src="https://hikkoshizamurai.jp/images/request/sp/all_electric_txt01.png" alt="顧客満足度No.1！引越しは電力会社を見直すチャンス！">
+          <span class='list-benefit-text'>提供：ENEOSでんき取扱店株式会社エイチーム引越し侍</span>
+        </div>
+      </label>
+    </li>
+  </ul>
+
+  <h2 class='heading-bar'>インターネット回線無料電話サポート</h2>
+
+  <div class='flets-section'>
+    <p>ネットを利用するなら早めの手続きがオススメ！今なら<span class='text-accent text-bold'>お得なキャッシュバック付き！</span>お気軽にご相談ください</p>
+  </div>
+
 </div>
