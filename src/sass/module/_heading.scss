@@ -1,0 +1,28 @@
+.heading-bar {
+  background: linear-gradient(to bottom, #fc7c6d 0%, #ff5743 100%);
+  border-top: 1px solid #ff5743;
+  border-bottom: 1px solid #fa2a2a;
+  font-size: 16px;
+  color: #fff;
+  padding: 10px 4%;
+  line-height: 1;
+}
+
+.heading-form {
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #ebebeb;
+  .heading-form-inner {
+    padding-left: 10px;
+    font-size: 14px;
+    border-left: 4px solid #ff5743;
+    color: #666;
+    line-height: 1.1;
+    font-weight: bold;
+  }
+  .heading-form-caption {
+    color: #666;
+    font-size: 11px;
+  }
+}

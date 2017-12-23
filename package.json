@@ -5,6 +5,7 @@
   "license": "MIT",
   "scripts": {
     "watch": "webpack --w -d",
+    "style": "./node_modules/.bin/node-sass src/sass/style.scss dst/css/style.css",
     "serve": "webpack && webpack-dev-server --hot --inline",
     "lint": "./node_modules/.bin/eslint --ext js,vue src/js/* src/js/**/*"
   },

@@ -1,0 +1,36 @@
+.checkbox-btn {
+  display: table;
+  width: 100%;
+  li {
+    position: relative;
+    width: 50%;
+    display: table-cell;
+    vertical-align: middle;
+    border: 1px solid #bbb;
+  }
+  .checkbox-btn-input {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+  }
+  li {
+    &:first-child {
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+    &:last-child {
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+  }
+  .checkbox-btn-item {
+    display: block;
+    padding: 10px 0 10px 30px;
+    font-size: 13px;
+    line-height: 1;
+    [type='radio'], [type='checkbox'] {
+      vertical-align: middle;
+    }
+  }
+}
