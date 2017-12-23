@@ -12,36 +12,138 @@
     <h3 class='heading-form'>
       <div class='heading-form-inner'>リビング周り</div>
     </h3>
-    <ul class='form-section clearfix'>
-      <li class='box' 
-          v-for='(item, index) in furniture'
+    <ul class='form-section l-box-half clearfix'>
+      <li v-for='(item, index) in furniture'
           :key='item.name'>
-        <div class='box-header'></div>
-        <div class='box-body'>
-          <img class='box-img-furniture' src='https://hikkoshizamurai.jp/images/request/new/furniture23.png'>
-          <counter v-bind='item'                  
-                   @increment='incrementValue' 
-                   @decrement='decrementValue' 
-                   @changeInput='changeValue' />
+        <div class='box'>
+          <div class='box-header'>ソファ</div>
+            <div class='box-body'>
+              <img class='box-img-furniture' src='https://hikkoshizamurai.jp/images/request/new/furniture23.png'>
+              <counter v-bind='item'                  
+                      @increment='incrementValue' 
+                      @decrement='decrementValue' 
+                      @changeInput='changeValue' />
+          </div>
         </div>
       </li>
     </ul>
     <h3 class='heading-form'>
       <div class='heading-form-inner'>エアコン</div>
     </h3>
-    <ul class='form-section clearfix'>
-      <li class='box full' 
-          v-for='(item, index) in furniture'
-          :key='item.name'>
-        <div class='box-header'></div>
-        <div class='box-body'>
-          <img class='box-img-furniture' src='https://hikkoshizamurai.jp/images/request/new/furniture23.png'>
-          <counter v-bind='item'                  
-                   @increment='incrementValue' 
-                   @decrement='decrementValue' 
-                   @changeInput='changeValue' />
+    <div class='form-section clearfix'>
+      <div>
+        <div class='box l-bottom-10'>
+          <div class='box-header'>エアコン</div>
+          <div class='box-body clearfix'>
+            <div class='box-aircon'>
+              <img class='box-img-furniture' src='https://hikkoshizamurai.jp/images/request/new/furniture23.png'>
+              <div class='select l-box-aircon-select'>
+                <select>
+                  <option value='0' selected='selected'>0</option>
+                  <option value='1'>1</option>
+                  <option value='2'>2</option>
+                  <option value='3'>3</option>
+                  <option value='4'>4</option>
+                  <option value='5'>5</option>
+                  <option value='6'>6</option>
+                  <option value='7'>7</option>
+                  <option value='8'>8</option>
+                  <option value='9'>9</option>
+                </select>
+              </div>
+            </div>
+            <div class='box-remove-aircon relative'>
+              <input type='checkbox' class='box-aircon-checkbox'>
+              <div class='box-aircon-header'>
+                <img class='box-aircon-img' src='https://hikkoshizamurai.jp/images/request/new/furniture23.png'>
+                <span class='box-aicon-description'>エアコン<br>取付・取外</span>
+              </div>
+              <div class='select l-box-aircon-select'>
+                <select>
+                  <option value='0' selected='selected'>0</option>
+                  <option value='1'>1</option>
+                  <option value='2'>2</option>
+                  <option value='3'>3</option>
+                  <option value='4'>4</option>
+                  <option value='5'>5</option>
+                  <option value='6'>6</option>
+                  <option value='7'>7</option>
+                  <option value='8'>8</option>
+                  <option value='9'>9</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='note l-bottom-20'>
+        <p class='note-text l-bottom-5'>
+          エアコン取外・取付作業が通常10,000円～15,000円が相場となりますが、
+          弊社サイトご利用の<span class='text-accent text-strong'>お客様限定で7,500円（税抜）～</span>工事を行うことが出来る<span class='text-accent text-strong'>工事割引クーポンを進呈</span>いたします！
+          ご案内を希望される場合は、上記チェックボックスにチェックをお願いいたします！
+        </p>
+        <p class='text-11'>(提供：株式会社エイチーム引越し侍 エアコンサポートセンター)</p>
+      </div>
+    </div>
+
+    <h3 class='heading-form'>
+      <div class='heading-form-inner'>ダンボール</div>
+    </h3>
+    <ul class='form-section l-box-half clearfix'>
+      <li>
+        <div class='box'>
+          <div class='box-header'>ダンボール</div>
+            <div class='box-body'>
+              <img class='box-img-furniture' src='https://hikkoshizamurai.jp/images/request/new/furniture23.png'>
+              <div class='select'>
+                <select>
+                  <option value='0' selected='selected'>0</option>
+                  <option value='1'>1</option>
+                  <option value='2'>2</option>
+                  <option value='3'>3</option>
+                  <option value='4'>4</option>
+                  <option value='5'>5</option>
+                  <option value='6'>6</option>
+                  <option value='7'>7</option>
+                  <option value='8'>8</option>
+                  <option value='9'>9</option>
+                </select>
+              </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class='note'>
+          <p class='note-title'>－個数の目安－</p>
+          <table class='note-table l-bottom-5'>
+            <tbody>
+              <tr>
+                <th>1K</th>
+                <td class='text-11'> ・・・ </td>
+                <td>10~15個</td>
+              </tr>
+              <tr>
+                <th>2DK</th>
+                <td class='text-11'> ・・・ </td>
+                <td>20~30個</td>
+              </tr>
+              <tr>
+                <th>3DK</th>
+                <td class='text-11'> ・・・ </td>
+                <td>50個以上</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class='box-cardboard-text'>
+            ※およそ、1人あたり<br>
+            10~20個が目安になります。
+          </p>
         </div>
       </li>
     </ul>
+
+    <h3 class='heading-form'>
+      <div class='heading-form-inner'>上記以外の家財・その他ご希望事項</div>
+    </h3>
   </section>
 </div>

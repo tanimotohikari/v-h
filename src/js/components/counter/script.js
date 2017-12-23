@@ -11,26 +11,26 @@ export default {
     max: {
       type: Number,
       required: false,
-      validator: function (value) {
-        return value || 9
-      }
-    }
+      validator: function validator(value) {
+        return value || 9;
+      },
+    },
   },
-  data: function () {
+  data: function data() {
     return {};
   },
-  created: function created () {},
+  created: function created() {},
   computed: {},
   methods: {
     incrementCounter(name) {
-      this.$emit('increment', name)
+      this.$emit('increment', name);
     },
     decrementCounter(name) {
-      this.$emit('decrement', name)
+      this.$emit('decrement', name);
     },
     updateInput(name, event) {
       const count = event.target.value;
-      this.$emit('changeInput', { count, name })
-    }
+      this.$emit('changeInput', { count, name });
+    },
   },
 };

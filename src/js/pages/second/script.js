@@ -1,7 +1,6 @@
 import Vue from 'vue';
 import stepNavigation from '../../components/step-navigation';
 import counter from '../../components/counter';
-import { pref } from '../../constants';
 
 Vue.component('step-navigation', stepNavigation);
 Vue.component('counter', counter);
@@ -27,10 +26,10 @@ const furniture = {
     count: 0,
     max: 19,
   },
-}
+};
 
 export default {
-  data: function() {
+  data: function data() {
     return {
       furniture,
     };
@@ -41,11 +40,11 @@ export default {
   methods: {
     incrementValue(name) {
       if (this.furniture[name].max <= this.furniture[name].count) return false;
-      this.furniture[name].count++;
+      this.furniture[name].count = this.furniture[name].count + 1;
     },
     decrementValue(name) {
       if (this.furniture[name].count <= 0) return false;
-      this.furniture[name].count--;
+      this.furniture[name].count = this.furniture[name].count - 1;
     },
     changeValue({ count, name }) {
       if (!count) {
@@ -59,6 +58,6 @@ export default {
           this.furniture[name].count = Number(count);
         }
       }
-    }
+    },
   },
 };

@@ -7,7 +7,7 @@ Vue.component('step-navigation', stepNavigation);
 export default {
   data: function data() {
     return {
-      pref
+      pref,
     };
   },
   created: function created() {

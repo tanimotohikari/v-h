@@ -1,7 +1,21 @@
+.l-box-half {
+  & > * {
+    float: left;
+    width: 50%;
+    margin-bottom: 10px;
+
+    &:nth-child(odd) {
+      padding-right: 5px;
+    }
+
+    &:nth-child(even) {
+      padding-left: 5px;
+    }
+  }
+}
+
 .box {
-  float: left;
-  width: 48%;
-  margin: 0 1% 10px;
+  width: 100%;
   background: #fff;
   border-collapse: separate;
   border-spacing: 0;
@@ -10,13 +24,62 @@
 }
 
 .box-header {
-  padding: 10px 0;
+  padding: 7px 0;
   background: linear-gradient(to bottom, #e6e6e6 0%,#dadada 100%);
   border-radius: 5px 5px 0 0;
   font-size: 11px;
+  text-align: center;
 }
 
 .box-body {
   padding: 10px;
   text-align: center;
+}
+
+.box-aircon {
+  float: left;
+  width: 50%;
+  padding: 5px 10px;
+}
+
+.box-remove-aircon {
+  float: right;
+  width: 50%;
+  padding: 5px 5px 5px 30px;
+}
+
+.box-aircon-checkbox {
+  position: absolute;
+  top: 34px;
+  left: 10px;
+}
+
+.box-aircon-header {
+  display: table;
+
+  .box-aircon-img {
+    display: table-cell;
+    width: 55px;
+    height: 55px;
+    vertical-align: middle;
+  }
+
+  .box-aicon-description {
+    display: table-cell;
+    margin-top: 12px;
+    font-size: 13px;
+    text-align: left;
+    line-height: 1.2;
+    vertical-align: middle;
+  }
+}
+
+.box-cardboard-text {
+  font-size: 11px;
+  line-height: 1.1;
+}
+
+.l-box-aircon-select {
+  display: inline-block;
+  width: 92px;
 }
