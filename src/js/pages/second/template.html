@@ -382,7 +382,44 @@
   <h2 class='heading-bar'>インターネット回線無料電話サポート</h2>
 
   <div class='flets-section'>
-    <p>ネットを利用するなら早めの手続きがオススメ！今なら<span class='text-accent text-bold'>お得なキャッシュバック付き！</span>お気軽にご相談ください</p>
+
+    <p class='l-bottom-10'>ネットを利用するなら早めの手続きがオススメ！今なら<span class='text-accent text-bold'>お得なキャッシュバック付き！</span>お気軽にご相談ください</p>
+
+    <ul class='labelbox clearfix' id='option_box01'>
+      <li>
+        <label class='labelbox-item' for='1'>
+          <div class='labelbox-flets'>
+            <div class='labelbox-flets-input'>
+              <input class='labelbox-flets-checkbox' name='request[option_services][]' type='checkbox' value='1' id='1'>
+            </div>
+            <div class='labelbox-flets-info'>
+              <div>
+                <div class='labelbox-flets-image'>
+                  <img class='full' src="https://hikkoshizamurai.jp/images/request/sp/form/flets/banner_flets.jpg" alt="">
+                </div>
+                <p class='labelbox-flets-text'>インターネット回線の無料サポートサービスを希望する？</p>
+              </div>
+              <ul class='labelbox-flets-logos'>
+                <li>
+                  <img class='full' src="https://hikkoshizamurai.jp/images/request/sp/form/flets/sub-icon-softbank.png">
+                </li><li>
+                  <img class='full' src="https://hikkoshizamurai.jp/images/request/sp/form/flets/sub-icon-au.png">
+                </li><li>
+                  <img class='full' src="https://hikkoshizamurai.jp/images/request/sp/form/flets/sub-icon-docomo.png">
+                </li><li>
+                  <img class='full' src="https://hikkoshizamurai.jp/images/request/sp/form/flets/sub-icon-wimax.png">
+                </li>
+              </ul>
+            </div>
+          </div>
+        </label>
+      </li>
+    </ul>
+
+  </div>
+
+  <div class='form-section'>
+    <router-link :to="{ name: 'confirm', params: { userId: 123 }}" class="btn">次のページへ進む</router-link>
   </div>
 
 </div>
