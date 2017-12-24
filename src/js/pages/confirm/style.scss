@@ -1,3 +1,63 @@
-.full {
+.btn-confirm {
+  padding: 10px 0 14px;
+}
+
+.btn-text-agreement {
+  font-size: 15px;
+  line-height: 1;
+}
+
+.btn-text-confirm {
+  display: block;
+  letter-spacing: -0.04em;
+}
+
+.visitCompany {
+  .visitCompany-title {
+    background-color: #ededed;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .75);
+    padding: 5px 5%;
+  }
+
+  .visitCompany-body {
+    
+  }
+
+  .list-visitCompany {
+    li {
+      position: relative;
+    }
+
+    .list-visitCompany-checkbox {
+      position: absolute;
+      top: 15px;
+      left: 10px;  
+    }
+
+    .list-visitCompany-item {
+      display: block;
+      padding: 10px 10px 10px 30px;
+    }
+  }
+}
+
+.table-confirm {
   width: 100%;
+  th {
+    width: 35%;
+    background-color: #ffc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 8px 0 8px 6px;;
+    font-weight: normal;
+    text-align: left;
+  }
+
+  td {
+    background-color: #fff;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 8px 0 8px 6px;
+    text-align: left;
+  }
 }

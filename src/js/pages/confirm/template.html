@@ -1,8 +1,78 @@
 <div>
-  <header class='header'>
-    <div class='header-inner'>
-      <img class='full' src='https://hikkoshizamurai.jp/images/common/count/sp_num_hikkoshizamurai.png' alt='引越し侍'>
+  <step-navigation src='https://hikkoshizamurai.jp/images/request/sp/form/samurai_flow_first.png' />
+  <p class='header-banner'>
+    <img src='https://hikkoshizamurai.jp/images/request/sp/form/banner05.png' alt='簡単1分！の情報入力で一番安い見積もりが分かる！' class='full'>
+  </p>
+  <p class='lead text-12'>
+    ページ下部までご確認頂き、当サイトの<a class=''>利用規約</a>、および<a href='' class=''>個人情報の取り扱い通知書</a>を必ずお読みになり、同意の上でご利用ください。
+  </p>
+  <div class='form-section'>
+    <router-link :to='{ name: "confirm", params: { userId: 123 }}' class='btn btn-confirm'>
+      <span class='btn-text-agreement'>同意の上</span>
+      <span class='btn-text-confirm'>
+        見積もり依頼
+        <span class='text-13'>&</span>
+        相場を見る
+      </span>
+    </router-link>
+  </div>
+  <section class='visitCompany'>
+    <div class='visitCompany-title'>初めての方も安心！プロのアドバイスも聞ける無料訪問お見積もり</div>
+    <div class='visitCompany-body'>
+      <ul class='list-visitCompany'>
+        <li>
+          <input type='checkbox' value='1' id='1' class='list-visitCompany-checkbox'>
+          <label for='1' class='list-visitCompany-item'>
+            <div>
+                無料訪問お見積もりを希望<br>
+                <span>（アート引越センター）</span>
+            </div>
+          </label>
+        </li>
+      </ul>
     </div>
-  </header>
-  <router-view></router-view>
+  </section>
+
+  <h2 class='heading-bar'>お客様情報</h2>
+  <table class='table-confirm l-bottom-20'>
+    <tbody>
+      <tr>
+        <th>お名前</th><td>テスト テスタ</td>
+      </tr>
+      <tr>
+        <th>フリガナ</th><td>テスト テスタ</td>
+      </tr>
+      <tr>
+        <th>電話番号</th><td>090-5458-8660</td>
+      </tr>
+      <tr>
+        <th>メール</th><td>hoge@example.com</td>
+      </tr>
+      <tr>
+        <th>当サイトを<br>どこで知りましたか？</th><td>ラジオCM(NACK5)</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class='heading-bar'>お客様情報</h2>
+  <table class='table-confirm l-bottom-20'>
+    <tbody>
+      <tr>
+        <th>お名前</th><td>テスト テスタ</td>
+      </tr>
+      <tr>
+        <th>フリガナ</th><td>テスト テスタ</td>
+      </tr>
+      <tr>
+        <th>電話番号</th><td>090-5458-8660</td>
+      </tr>
+      <tr>
+        <th>メール</th><td>hoge@example.com</td>
+      </tr>
+      <tr>
+        <th>当サイトを<br>どこで知りましたか？</th><td>ラジオCM(NACK5)</td>
+      </tr>
+    </tbody>
+  </table>
+
 </div>
