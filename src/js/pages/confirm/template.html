@@ -3,11 +3,13 @@
   <p class='header-banner'>
     <img src='https://hikkoshizamurai.jp/images/request/sp/form/banner05.png' alt='簡単1分！の情報入力で一番安い見積もりが分かる！' class='full'>
   </p>
-  <p class='lead text-12'>
-    ページ下部までご確認頂き、当サイトの<a class=''>利用規約</a>、および<a href='' class=''>個人情報の取り扱い通知書</a>を必ずお読みになり、同意の上でご利用ください。
-  </p>
   <div class='form-section'>
-    <router-link :to='{ name: "confirm", params: { userId: 123 }}' class='btn btn-confirm'>
+    <p class='text-warning-notice l-bottom-20'>
+      ページ下部までご確認頂き、当サイトの<a class=''>利用規約</a>、および<a href='' class=''>個人情報の取り扱い通知書</a>を必ずお読みになり、同意の上でご利用ください。
+    </p>
+  </div>
+  <div class='form-section l-bottom-20'>
+    <router-link :to='{ name: "/", params: { userId: 123 }}' class='btn btn-confirm'>
       <span class='btn-text-agreement'>同意の上</span>
       <span class='btn-text-confirm'>
         見積もり依頼
@@ -16,22 +18,17 @@
       </span>
     </router-link>
   </div>
-  <section class='visitCompany'>
-    <div class='visitCompany-title'>初めての方も安心！プロのアドバイスも聞ける無料訪問お見積もり</div>
-    <div class='visitCompany-body'>
-      <ul class='list-visitCompany'>
-        <li>
-          <input type='checkbox' value='1' id='1' class='list-visitCompany-checkbox'>
-          <label for='1' class='list-visitCompany-item'>
-            <div>
-                無料訪問お見積もりを希望<br>
-                <span>（アート引越センター）</span>
-            </div>
-          </label>
-        </li>
-      </ul>
-    </div>
-  </section>
+
+  <h2 class='title-visitCompany'>初めての方も安心！プロのアドバイスも聞ける無料訪問お見積もり</h2>
+  <div class='checkbox-horizontal'>
+    <input type='checkbox' value='1' id='1'>
+    <label for='1' class='checkbox-horizontal-body'>
+      <div>
+        無料訪問お見積もりを希望<br>
+        <span>（アート引越センター）</span>
+      </div>
+    </label>
+  </div>
 
   <h2 class='heading-bar'>お客様情報</h2>
   <table class='table-confirm l-bottom-20'>
@@ -147,7 +144,7 @@
       </tr>
       <tr>
         <td>
-          <p>希望する</p>
+          <p class='l-bottom-5'>希望する</p>
           <p class='text-14'>
             (提供：株式会社エイチームコネクト）<br>
             ※お見積もり完了後、提携会社よりメールまたはお電話でご案内を差し上げます｡迷惑メール設定をされているお客様については「@hikkosizamurai.com」のメールが受信できるよう設定変更をお願いします。
@@ -164,7 +161,7 @@
       </tr>
       <tr>
         <td>
-          <p>希望する</p>
+          <p class='l-bottom-5'>希望する</p>
           <p class='text-14'>
             ※ENEOSでんき取扱店　株式会社エイチーム引越し侍より、お電話にてご連絡を差し上げます。
           </p>
@@ -176,7 +173,88 @@
   <h2 class='heading-bar'>ご利用者アンケート</h2>
 
   <section class='form-section'>
-    <p>今後のサービス向上のため、アンケートにご協力ください</p>
+    <p class='l-bottom-10'>今後のサービス向上のため、アンケートにご協力ください</p>
+
+    <h3 class='survey-title l-bottom-10'>Q1. 性別をお聞かせください。</h3>
+    <ul class='checkbox-btn l-bottom-10'>
+      <li>
+        <input class='checkbox-btn-input' name='gender' type='radio' value='0' id='male' checked='checked'>
+        <label class='checkbox-btn-item' for='male'>
+          男性
+        </label>
+      </li>
+      <li>
+        <input class='checkbox-btn-input' name='gender' type='radio' value='1' id='female'>
+        <label class='checkbox-btn-item' for='female'>
+          女性
+        </label>
+      </li>
+    </ul>
+
+    <h3 class='survey-title l-bottom-10'>Q2. 年齢をお聞かせください。</h3>
+    <div class='l-bottom-10'>
+      <div class='select full'>
+        <select>
+          <option>選択してください</option>
+          <option>10代</option>
+        </select>
+      </div>
+    </div>
+    
+    <h3 class='survey-title l-bottom-10'>Q3. 新居で検討しているインターネット環境についてお聞かせください。</h3>
+    <div class='l-bottom-10'>
+      <div class='select full'>
+        <select>
+          <option>選択してください</option>
+          <option>10代</option>
+        </select>
+      </div>
+    </div>
+    
+    <h3 class='survey-title l-bottom-10'>Q4. ご職業をお聞かせください。</h3>
+    <div class='l-bottom-10'>
+      <div class='select full'>
+        <select>
+          <option>選択してください</option>
+          <option>10代</option>
+        </select>
+      </div>
+    </div>
+    
+    <h3 class='survey-title l-bottom-10'>Q5. ご利用のきっかけをお聞かせください。</h3>
+    <div class='l-bottom-20'>
+      <div class='select full'>
+        <select>
+          <option>選択してください</option>
+          <option>10代</option>
+        </select>
+      </div>
+    </div>
+
+    <div class='checkbox-horizontal'>
+      <input type='checkbox' value='1' id='2'>
+      <label for='2' class='checkbox-horizontal-body'>
+        <div>
+          キャンペーン等のお得な情報を受け取る<br>
+          <span class='text-12'>（不要な方はチェックを外してください）</span>
+        </div>
+      </label>
+    </div>
+
+  </section>
+
+  <section class='form-section'>
+    <p class='text-warning-notice l-bottom-20'>
+      当サイトの<a href="">利用規約</a>、および<a href="">個人情報の取り扱い通知書</a>を必ずお読みになり、同意の上でご利用ください。
+    </p>
+    <router-link :to='{ name: "/", params: { userId: 123 }}' class='btn btn-confirm'>
+      <span class='btn-text-agreement'>同意の上</span>
+      <span class='btn-text-confirm'>
+        見積もり依頼
+        <span class='text-13'>&</span>
+        相場を見る
+      </span>
+    </router-link>
   </section>
 
 </div>

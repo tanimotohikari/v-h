@@ -1,3 +1,8 @@
+.text-warning-notice {
+  color: #777;
+  font-size: 12px;
+}
+
 .btn-confirm {
   padding: 10px 0 14px;
 }
@@ -12,32 +17,26 @@
   letter-spacing: -0.04em;
 }
 
-.visitCompany {
-  .visitCompany-title {
-    background-color: #ededed;
-    text-shadow: 0 1px 0 rgba(255, 255, 255, .75);
-    padding: 5px 5%;
+.title-visitCompany {
+  background-color: #ededed;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, .75);
+  padding: 5px 5%;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.checkbox-horizontal {
+  position: relative;
+
+  [type=checkbox] {
+    position: absolute;
+    top: 15px;
+    left: 10px;
   }
 
-  .visitCompany-body {
-    
-  }
-
-  .list-visitCompany {
-    li {
-      position: relative;
-    }
-
-    .list-visitCompany-checkbox {
-      position: absolute;
-      top: 15px;
-      left: 10px;  
-    }
-
-    .list-visitCompany-item {
-      display: block;
-      padding: 10px 10px 10px 30px;
-    }
+  .checkbox-horizontal-body {
+    display: block;
+    padding: 10px 10px 10px 30px;
   }
 }
 
@@ -58,7 +57,7 @@
     background-color: #ffc;
     border-right: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
-    padding: 4px 0 4px 6px;
+    padding: 8px 6px;
     font-weight: normal;
     text-align: left;
   }
@@ -67,7 +66,12 @@
     background-color: #fff;
     border-right: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
-    padding: 4px 0 4px 6px;
+    padding: 8px 6px;
     text-align: left;
   }
+}
+
+.survey-title {
+  font-size: 16px;
+  font-weight: bold;
 }
