@@ -1,6 +1,6 @@
 import Vue from 'vue';
-import stepNavigation from '../../components/step-navigation';
 import constants from '../../constants';
+import stepNavigation from '../../components/step-navigation';
 
 Vue.component('step-navigation', stepNavigation);
 

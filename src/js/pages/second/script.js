@@ -1,8 +1,6 @@
 import Vue from 'vue';
-import stepNavigation from '../../components/step-navigation';
 import counter from '../../components/counter';
 
-Vue.component('step-navigation', stepNavigation);
 Vue.component('counter', counter);
 
 const furniture = {
