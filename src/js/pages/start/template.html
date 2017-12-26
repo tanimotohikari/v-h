@@ -14,7 +14,7 @@
     </div>
   </h3>
   <div class='form-section'>
-    <input maxlength='8' type='tel' name='request[current_zip_code]' placeholder='例）1500001' id='search_zip_code' class='input full'>
+    <input maxlength='8' type='tel' placeholder='例）1500001' class='input full' v-model='models.current_zip_code'>
   </div>
   <h3 class='heading-form'>
     <div class='heading-form-inner'>
@@ -23,8 +23,8 @@
   </h3>
   <div class='form-section'>
     <div class='select'>
-      <select>
-        <option v-for="prefecture in prefectures" v-bind:value="prefecture.value">
+      <select v-model='models.new_prefecture_id'>
+        <option v-for="prefecture in settings.prefectures" v-bind:value="prefecture.value">
           {{ prefecture.text }}
         </option>
       </select>
@@ -38,10 +38,10 @@
   <div class='form-section l-bottom-20'>
     <ul class='list-moveType clearfix'>
       <li>
-        <label for='request_move_type_1'>
-          <div class='radio-moveType clearfix' v-bind:class="{ 'is-active': move.type === '1' }">
+        <label for='moveType1'>
+          <div class='radio-moveType clearfix' :class="{ 'is-active': models.move_type == '1' }">
             <div class='radio-moveType-input'>
-              <input name='request[move_type]' type='radio' value='1' id='request_move_type_1' checked='checked' v-model="move.type">
+              <input name='move_type' type='radio' value='1' v-model="models.move_type" id='moveType1'>
             </div>
             <div class='radio-moveType-artwork'>
               <img class='radio-moveType-image' src='https://hikkoshizamurai.jp/images/request/sp/form/start_ic_single01.png' alt=''>
@@ -51,10 +51,10 @@
         </label>
       </li>
       <li>
-        <label for='request_move_type_2'>
-          <div class='radio-moveType clearfix' v-bind:class="{ 'is-active': move.type === '2' }">
+        <label for='moveType2'>
+          <div class='radio-moveType clearfix' :class="{ 'is-active': models.move_type == '2' }">
             <div class='radio-moveType-input'>
-              <input name='request[move_type]' type='radio' value='2' id='request_move_type_2' v-model="move.type">
+              <input name='move_type' type='radio' value='2' v-model="models.move_type" id='moveType2'>
             </div>
             <div class='radio-moveType-artwork'>
               <img class='radio-moveType-image' src='https://hikkoshizamurai.jp/images/request/sp/form/start_ic_family01.png' alt=''>
@@ -65,7 +65,8 @@
       </li>
     </ul>
   </div>
+  <div @click='updateStore'>click</div>
   <div class='form-section'>
-    <router-link :to="{ name: 'first', params: { userId: 123 }}" class='btn'>次のページへ進む</router-link>
+    <router-link @click='updateStore' :to="{ name: 'first', params: { userId: 123 }}" class='btn'>次のページへ進む</router-link>
   </div>
 </div>

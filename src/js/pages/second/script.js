@@ -1,8 +1,6 @@
 import Vue from 'vue';
 import counter from '../../components/counter';
 
-Vue.component('counter', counter);
-
 const furniture = {
   sofa1: {
     name: 'sofa1',
@@ -35,6 +33,7 @@ export default {
   created: function created() {
     window.scrollTo(0, 0);
   },
+  components: { counter },
   methods: {
     incrementValue(name) {
       if (this.furniture[name].max <= this.furniture[name].count) return false;
